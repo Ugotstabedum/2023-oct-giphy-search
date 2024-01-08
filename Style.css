@@ -1,0 +1,55 @@
+:root {
+    --primary-background: #BFACC8;
+    --primary-accent: #4F1271;
+    --hover-primary-accent: #a9a6be;
+    --primary-font: black;
+    --alternate-background: whitesmoke;
+    --header-footer-background: #4A4063;
+    --header-footer-font: whitesmoke;
+}
+
+.body {
+    min-width: 300px;
+}
+
+.giphy-img {
+    margin: 10px;
+    border: 4px ridge var(--header-footer-background);
+}
+
+.page-header {
+    color: whitesmoke;
+    background-color: var(--header-footer-background);  
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+.giphy-form {
+    padding: 8rem 1.5rem;
+}
+
+.page-menu-container {
+    list-style-type: none;
+    display: flex;
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+.page-menu-link {
+    color: whitesmoke;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+
+.page-menu-link:hover {
+    color:var(--hover-primary-accent);
+}

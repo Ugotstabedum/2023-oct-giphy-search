@@ -19,7 +19,13 @@ function getData(memeText, memeCount) {
 function renderData(response) {
     let html = "";
     for (let image of response.data) {
-        html += `<img src="${image.images.original.url} alt="${image.title}" />`;
+        html += 
+            `<img 
+                src="${image.images.original.url} 
+                alt="${image.title}"
+                class="giphy-img" />`
+            ;
+                
     }
     document.querySelector(".js-images").innerHTML = html
 }

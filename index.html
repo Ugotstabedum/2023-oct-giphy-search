@@ -9,14 +9,22 @@
              rel="stylesheet" 
              integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
              crossorigin="anonymous"
-        >       
+        >  
+         <link rel="stylesheet" href="./Style.css">   
     </head>
     <body>
-        <h1>Giphy Search</h1>
-            <form class="col-4 offset-4 js-giphy-form">
+        <header class="page-header">
+            <h1>Giphy Search</h1>
+            <nav>
+                <ul class="page-menu-container">
+                    <li class="page-menu-item"><a href="https://ugotstabedum.github.io/Portfolio-Site/Index.html" target="_blank" class="page-menu-link">About</a></li>
+                </ul>
+            </nav>
+        </header>
+            <form class="js-giphy-form giphy-form">
                 <fieldset>
-                <legend>Find for your favorite memes.</legend>
-                <div class="mb-3">
+                <legend class="col-12 col-md-6 offse-md-3 col-lg-4 offset-lg-4">Find for your favorite memes!</legend>
+                <div class="mb-3 col-12 col-md-6 offse-md-3 col-lg-4 offset-lg-4">
                     <label for="memeTextInput" class="form-label">Meme</label>
                     <input 
                         type="text" 
@@ -27,7 +35,7 @@
                         required
                         >
                 </div>
-                <div class="mb-3">
+                <div class="mb-3 col-12 col-md-6 offse-md-3 col-lg-4 offset-lg-4">
                     <label for="numOfGifsSelect" class="form-label">Number of gifs</label>
                     <select id="numOfGifsSelect" class="form-select" name="numOfGifsSelect">
                     <option value="1">1</option>
@@ -38,7 +46,7 @@
                     </select>
                 </div>
                 <div>
-                    <button type="submit" class="btn btn-success">Submit</button>
+                    <button type="submit" class="btn btn-success col-12 col-md-6 offse-md-3 col-lg-4 offset-lg-4">Submit</button>
                 </div>
                 </fieldset>
             </form>
