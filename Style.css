@@ -24,7 +24,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 1.5rem;
+    padding: .5rem
+
+;
     overflow: hidden;
     position: fixed;
     top: 0;
@@ -52,4 +54,8 @@
 
 .page-menu-link:hover {
     color:var(--hover-primary-accent);
+}
+
+.page-menu-item {
+    padding: 1rem 1.5rem;
 }
